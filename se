@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int i,true,j,false;
+    int sieb[300];
+    
+  for (i=2;i<300;i++){
+        sieb[i]=i+1;
+        true=sieb[i];
+        if(sieb[i]){
+        for(j=i;i*j<300;j++)
+        sieb[i*j]=false;}
+  
+            
+                printf("%d\n",true);}
+            
+    return 0;
+}
